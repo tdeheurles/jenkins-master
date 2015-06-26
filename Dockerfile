@@ -23,9 +23,9 @@ COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
 # Copy Jenkins config
-USER root
-COPY jenkins /usr/share/jenkins/ref
-RUN chown -R jenkins:jenkins /usr/share/jenkins/ref
+# USER root
+# COPY jenkins /usr/share/jenkins/ref
+# RUN chown -R jenkins:jenkins /usr/share/jenkins/ref
 
 # Install gcloud
 USER root
